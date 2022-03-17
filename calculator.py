@@ -29,8 +29,7 @@ while True:
             print(add(tokens))
 
         elif tokens[0] == "sub" or tokens[0] == "-":
-            tokens[2] = float(tokens[2])
-            print(subtract(tokens[1], tokens[2]))
+            print(subtract(tokens))
 
         elif tokens[0] == "mult" or tokens[0] == "*":
             tokens[2] = float(tokens[2])
