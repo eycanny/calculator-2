@@ -30,10 +30,17 @@ def subtract(nums):
     return total
 
 
-def multiply(num1, num2):
-    """Multiply the two inputs together."""
+def multiply(nums):
+    """Multiply the all inputs together."""
+    #test list: ['*', '2', '2', '3', '4'] -> output: 48
+    total = float(nums[1])
+    i = 2
 
-    return num1 * num2
+    while i < len(nums):
+        total = total * float(nums[i])
+        i +=1
+
+    return total
 
 
 def divide(num1, num2):

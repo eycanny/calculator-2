@@ -32,8 +32,7 @@ while True:
             print(subtract(tokens))
 
         elif tokens[0] == "mult" or tokens[0] == "*":
-            tokens[2] = float(tokens[2])
-            print(multiply(tokens[1], tokens[2]))
+            print(multiply(tokens))
 
         elif tokens[0] == "div" or tokens[0] == "/":
             tokens[2] = float(tokens[2])
