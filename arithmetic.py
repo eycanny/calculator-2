@@ -1,16 +1,33 @@
 """Functions for common math operations."""
 
+def add(nums):
+    """Return the sum of all input integers."""
+    total = 0
+    i = 1
 
-def add(num1, num2):
-    """Return the sum of the two input integers."""
+    while i < len(nums):
+        num = float(nums[i])
+        total += num
+        i += 1
 
-    return num1 + num2
+    return total
 
 
-def subtract(num1, num2):
-    """Return the second number subtracted from the first."""
+def subtract(nums):
+    """Return the sum of subsequent numbers from the first number."""
+    # test list = ['-', '100', '50', '20']
+    first_number = float(nums[1])
+    sum_of_subsequent_numbers = 0
+    i = 2
 
-    return num1 - num2
+    while i < len(nums):
+        num = float(nums[i])
+        sum_of_subsequent_numbers += num
+        i += 1
+
+    total = first_number - sum_of_subsequent_numbers
+
+    return total
 
 
 def multiply(num1, num2):

@@ -17,7 +17,6 @@ while True:
         break
 #         else:
     else:
-        tokens[1] = float(tokens[1])
         
 #             (decide which math function to call based on first token)
 #             if the first token is 'pow':
@@ -27,8 +26,7 @@ while True:
             print(power(tokens[1], tokens[2]))
 
         elif tokens[0] == "add" or tokens[0] == "+":
-            tokens[2] = float(tokens[2])
-            print(add(tokens[1], tokens[2]))
+            print(add(tokens))
 
         elif tokens[0] == "sub" or tokens[0] == "-":
             tokens[2] = float(tokens[2])
@@ -51,3 +49,4 @@ while True:
         elif tokens[0] == "mod" or tokens[0] == "%":
             tokens[2] = float(tokens[2])
             print(mod(tokens[1], tokens[2]))
+
