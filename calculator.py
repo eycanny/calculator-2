@@ -35,8 +35,7 @@ while True:
             print(multiply(tokens))
 
         elif tokens[0] == "div" or tokens[0] == "/":
-            tokens[2] = float(tokens[2])
-            print(divide(tokens[1], tokens[2]))
+            print(divide(tokens))
         
         elif tokens[0] == "square":
             print(square(tokens[1]))

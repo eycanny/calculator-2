@@ -43,10 +43,17 @@ def multiply(nums):
     return total
 
 
-def divide(num1, num2):
-    """Divide the first input by the second, returning a floating point."""
+def divide(nums):
+    """Divide the first input by the subsequent numbers, returning a floating point."""
+    #test list: ['/', '100', '2', '5', '2'] => output: 5
+    total = float(nums[1])
+    i = 2 
 
-    return num1 / num2
+    while i < len (nums):
+        total = total / float(nums[i])
+        i +=1
+
+    return total
 
 
 def square(num1):
